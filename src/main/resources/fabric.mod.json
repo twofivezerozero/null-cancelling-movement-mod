@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "ncmovement",
+  "version": "${version}",
+  "name": "Null Cancelling Movement",
+  "description": "Prevents your movement from stopping when two opposing movement keys are pressed. Similar to null-movement scripts from Source games.",
+  "authors": ["2500"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/ncmovement/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "twofive.ncmovement.RCMovement"
+    ]
+  },
+  "mixins": [
+    "ncmovement.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
